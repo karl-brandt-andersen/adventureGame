@@ -43,6 +43,6 @@ _deps
 *.out
 *.app
 
-/.vscode
+
 /build
 [Bb][Uu][Ii][Ll][Dd]/
