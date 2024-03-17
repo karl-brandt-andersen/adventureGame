@@ -8,14 +8,11 @@ Spilleren skal kunne bevæge sig med WASD og kunne slå med E og vælge items fr
 
 */
 
-// Jeg har brugt CMAKE tool til at bygge med GCC og vil til at bruge bublioteker https://code.visualstudio.com/docs/cpp/CMake-linux
-//Jeg vil også bruge vcpkg, har lagt det i C:\dev
-
+#include <stdio.h>
 #include <iostream>
 #include <Windows.h>
-#include <stdio.h>
-//  #include <RapidJSON>
-#include "dependencies/kba.h"
+//#include "dependencies/kba.h"
+#include <fmt/core.h>
 
 
 
@@ -188,7 +185,7 @@ int test()
         COORD cursorPosition = {0, 0};
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPosition);
 
-        printf("Count %d", i);
+        printf("Count %zd", i);
 
         Sleep(17);
     }
@@ -196,12 +193,18 @@ int test()
 }
 
 int test2(int a, int b){
-    std::cout << kba::add(a,b);
+    //std::cout << kba::add(a,b);
     return 0;
 }
+
+int test3(){
+    fmt::print("fmt test");
+    return 0;
+}
+
 
 int main()
 {
     //test();
-    test2(2,8);
-}
+    //test2(2,8);
+    test3();

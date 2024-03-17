@@ -1,25 +1,29 @@
-#Follow this tutorial to finish the setup of this file https://www.youtube.com/watch?v=ED-WUk440qc&list=PLalVdRk2RC6o5GHu618ARWh0VO0bFlif4&index=3
-
-cmake_minimum_required(VERSION 3.28.0)
-
-set(CMAKE_TOOLCHAIN_FILE "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake")
-
+cmake_minimum_required(VERSION 3.25.0)
 project(adventureGame VERSION 0.1.0 LANGUAGES C CXX)
 
-#include(CTest)
-#enable_testing()
-#set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-#set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-#include(CPack)
+#CMake VSCODE plugin setup
+include(CTest)
+enable_testing()
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
-set(CMAKE_PREFIX_PATH "C:/dev/vcpkg/installed/x64-windows/share") #This is for VCPKG TODO!
-
+#VCPKG libraries
 find_package(fmt CONFIG REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt)
+find_package(rapidjson CONFIG REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE fmt::fmt rapidjson)
 
-#TIL EGNE BIBLIOTEKER, LÆR AT LAVE EGNE BIBLIOTEKER
+#Local libraries
 target_link_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/dependencies/)
-target_link_libraries(${PROJECT_NAME} PRIVATE kba)
+#target_link_libraries(${PROJECT_NAME} PRIVATE kba)
 
+
+
+
+
+
+#SLET
+#INCLUDE_DIRECTORIES(C:/dev/vcpkg/installed/x64-windows/include)
+#LINK_DIRECTORIES(C:/dev/vcpkg/installed/x64-windows/lib) 
