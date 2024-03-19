@@ -185,7 +185,7 @@ int test()
         COORD cursorPosition = {0, 0};
         SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cursorPosition);
 
-        printf("Count %zd", i);
+        fmt::print("Count {}", i);
 
         Sleep(17);
     }
@@ -205,6 +205,7 @@ int test3(){
 
 int main()
 {
-    //test();
+    test();
     //test2(2,8);
-    test3();
+    //test3();
+}
