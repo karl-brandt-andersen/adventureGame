@@ -11,9 +11,8 @@ Spilleren skal kunne bevæge sig med WASD og kunne slå med E og vælge items fr
 #include <stdio.h>
 #include <iostream>
 #include <Windows.h>
-#include "dependencies/kba.h"
+#include "../libs/kba/include/kba.h" //linker cannot see, but it is configured in cmake
 #include <fmt/core.h>
-
 
 
 class Creature // Creatures skal have en bestemt skade de kan give, et symbol, der viser hvilken slags creature de er og måske en drop chance for loot de kan smide
