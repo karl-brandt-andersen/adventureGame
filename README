@@ -1,2 +1,9 @@
-#CMAKE stuff made from these tutorials
+Install VS studio with c++ desktop pack and mark MSVCxxx and some windows SDK to the install
+install VS code and download the extensions "CMake Tools(Microsoft)" and "C/C++(Microsoft)" 
+
+To make this project work, install VCPKG, which will also install Cmake https://learn.microsoft.com/en-us/vcpkg/get_started/get-started-msbuild?pivots=shell-cmd 
+
+Add "C:\path\to\vcpkg" to PATH in environment variables
+
 https://www.youtube.com/watch?v=FeBzSYiWkEU
+

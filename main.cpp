@@ -11,7 +11,7 @@ Spilleren skal kunne bevæge sig med WASD og kunne slå med E og vælge items fr
 #include <stdio.h>
 #include <iostream>
 #include <Windows.h>
-//#include "dependencies/kba.h"
+#include "dependencies/kba.h"
 #include <fmt/core.h>
 
 
@@ -193,7 +193,7 @@ int test()
 }
 
 int test2(int a, int b){
-    //std::cout << kba::add(a,b);
+    std::cout << kba::math::add(a,b);
     return 0;
 }
 
@@ -205,7 +205,7 @@ int test3(){
 
 int main()
 {
-    test();
-    //test2(2,8);
+    //test();
+    test2(2,8);
     //test3();
 }

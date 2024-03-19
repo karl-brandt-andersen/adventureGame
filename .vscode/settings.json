@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.txt": "cmake",
         "ostream": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
@@ -47,8 +48,8 @@
         "xmemory": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
-        
+        "xutility": "cpp",
+        "*.lib": "cpp"
     }
     
 }
