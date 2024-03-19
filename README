@@ -5,7 +5,6 @@ To make this project work, install VCPKG, which will also install Cmake https://
 
 Add "C:\path\to\vcpkg" to PATH in environment variables
 
-
-
-
 Different compilers can be installed via https://youtu.be/8jLOx1hD3_o?t=667 
+
+VCPKG does not work easy with GCC compiler

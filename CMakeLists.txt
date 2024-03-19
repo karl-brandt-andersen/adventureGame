@@ -1,5 +1,3 @@
-#This does not work with GCC compiler
-
 cmake_minimum_required(VERSION 3.10.0)
 project(adventureGame VERSION 0.1.0 LANGUAGES C CXX)
 add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/source/main.cpp)
