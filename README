@@ -7,4 +7,10 @@ Add "C:\path\to\vcpkg" to PATH in environment variables
 
 Different compilers can be installed via https://youtu.be/8jLOx1hD3_o?t=667 
 
+add this to vscode settings file     
+"cmake.options.statusBarVisibility": "compact",
+        "cmake.configureSettings": {
+          "CMAKE_TOOLCHAIN_FILE": "vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+
 VCPKG does not work easy with GCC compiler
