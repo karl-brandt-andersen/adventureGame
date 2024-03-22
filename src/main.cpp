@@ -11,7 +11,7 @@ Spilleren skal kunne bevæge sig med WASD og kunne slå med E og vælge items fr
 #include <stdio.h>
 #include <iostream>
 #include <Windows.h>
-#include "../libs/kba/include/kba.h" //linker cannot see, but it is configured in cmake
+#include "kba.h" //Cannot see the file, but it is linked, if chosen  to be compiled by cmake
 #include <fmt/core.h>
 
 
@@ -206,5 +206,5 @@ int main()
 {
     //test();
     test2(2,8);
-    //test3();
+    test3();
 }
