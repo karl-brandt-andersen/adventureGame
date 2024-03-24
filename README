@@ -1,3 +1,8 @@
+Works best with VS amd64 compiler
+
 TODO 
 
-*Fix .lib integration
+*Understand entire code for now
+*Add automatic scaling of background and players.
+*Design gameplay
+*Start game development
