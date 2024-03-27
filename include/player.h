@@ -1,7 +1,9 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include "../include/player.h"
+#include "../include/animation.h"
+#include <fmt/core.h>
+
  
 //using namespace sf;
  

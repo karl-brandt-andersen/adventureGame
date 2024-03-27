@@ -1,6 +1,5 @@
 #include "../include/player.h"
-#include "../include/animation.h"
-#include <fmt/core.h>
+
  
 Player::Player()
 {
@@ -76,6 +75,18 @@ void Player::update(float elapsedTime)
     Animation animate;
     timer += elapsedTime;
 
+    if (UpPressed)
+    {
+        Position.y -= Speed * elapsedTime;
+        animate.animate(3,rectSprite, Sprite, timer);
+    }
+ 
+    if (DownPressed)
+    {
+        Position.y += Speed * elapsedTime;
+        animate.animate(4,rectSprite, Sprite, timer);
+    }
+
     if (RightPressed)
     {
         Position.x += Speed * elapsedTime;
@@ -88,20 +99,6 @@ void Player::update(float elapsedTime)
         animate.animate(2,rectSprite, Sprite, timer);
     }
 
-    if (UpPressed)
-    {
-        Position.y -= Speed * elapsedTime;
-        animate.animate(3,rectSprite, Sprite, timer);
-    }
- 
-    if (DownPressed)
-    {
-        Position.y += Speed * elapsedTime;
-        animate.animate(4,rectSprite, Sprite, timer);
-    }
-    
- 
-    // Now move the sprite to its new position
     Sprite.setPosition(Position);   
  
 }
