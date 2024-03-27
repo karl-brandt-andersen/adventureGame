@@ -8,7 +8,7 @@
 class Engine
 {
 private:
-    sf::RenderWindow window;;
+    sf::RenderWindow window;
     sf::Sprite backgroundSprite;
     sf::Texture backgroundTexture;
 
@@ -18,6 +18,7 @@ private:
     void update(float dtAsSeconds);
     void draw();
 public:
+    sf::Vector2f scale;
     Engine();
 
     void start();

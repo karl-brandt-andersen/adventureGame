@@ -9,47 +9,11 @@ Spilleren skal kunne bevæge sig med WASD og kunne slå med E og vælge items fr
 */
 #include "kba.h"
 #include <fmt/core.h>
-//#include <SFML/Graphics.hpp>
 #include "engine.h"
 #include "player.h"
 
 
-class hp
-{
-private:
-    int hp;
-    int shield;
-public:
-    void setHp(int a){
-        hp = a;
-    }
 
-
-    void addHp(int a){
-        hp += a;
-    }
-
-    int getHp(){
-        return(hp);
-    }
-
-    void setShield(int a){
-        shield = a;
-    }
-
-    void addShield(int a){
-        shield += a;
-    }
-
-    int getShield(){
-        return(shield);
-    }
-
-    void takeDamage(int hitPoint){
-        hp -= shield - hitPoint;
-    }
-
-};
 
 class inventory
 {

@@ -9,7 +9,7 @@ project(
 )
 
 
-add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/engine.cpp ${CMAKE_SOURCE_DIR}/src/player.cpp)
+add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp ${CMAKE_SOURCE_DIR}/src/engine.cpp ${CMAKE_SOURCE_DIR}/src/player.cpp ${CMAKE_SOURCE_DIR}/src/hp.cpp ${CMAKE_SOURCE_DIR}/src/animation.cpp) 
 
 
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
