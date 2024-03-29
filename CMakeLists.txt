@@ -16,6 +16,7 @@ add_executable( ${PROJECT_NAME}
                 ${CMAKE_SOURCE_DIR}/src/hp.cpp 
                 ${CMAKE_SOURCE_DIR}/src/animation.cpp
                 ${CMAKE_SOURCE_DIR}/src/physics.cpp
+                ${CMAKE_SOURCE_DIR}/src/mapLoader.cpp
                 ) 
 
 

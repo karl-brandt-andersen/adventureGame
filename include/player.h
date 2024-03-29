@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "../include/animation.h"
 #include <fmt/core.h>
+#include <../include/physics.h>
 
  
 //using namespace sf;
@@ -23,9 +24,9 @@ private:
     bool UpPressed;
     bool DownPressed;
  
-    // Bob's speed in pixels per second
-    float Speed;
- 
+    float Speed; //pixels pr second
+
+    Physics physics;
 
 public:
  

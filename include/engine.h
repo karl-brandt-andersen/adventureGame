@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "../include/player.h"
+#include "../include/mapLoader.h"
+
 
 //using namespace sf;
 
@@ -13,6 +15,8 @@ private:
     sf::Texture backgroundTexture;
 
     Player player;
+    MapLoader mapLoader;
+    Physics physics;
 
     void input();
     void update(float dtAsSeconds);
