@@ -5,12 +5,14 @@
 class Physics
 {
 private:
-    float gravityForce = 100;
+    float gravityForce = 300;
 public:
 
     Physics();
     
-    bool Interacts(sf::IntRect x, sf::IntRect &y);
+    std::string Interacts(sf::Sprite x, sf::Sprite &y);
+
+    std::string InteractsMap(sf::Sprite player, sf::Sprite &map);
     
     void gravity(sf::Sprite creature, float force);
 

@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include "../include/player.h"
 #include "../include/mapLoader.h"
+#include <fmt/core.h> 
 
 
 //using namespace sf;
@@ -13,6 +14,7 @@ private:
     sf::RenderWindow window;
     sf::Sprite backgroundSprite;
     sf::Texture backgroundTexture;
+    sf::Vector2u resolution;
 
     Player player;
     MapLoader mapLoader;

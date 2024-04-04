@@ -9,43 +9,43 @@
         {
         case 1: //right
             spritesheet.top = 0;
-            if (spritesheet.left == 320)
+            if (spritesheet.left == 5)
             {
                 spritesheet.left = 0;
             }
             else{
-                spritesheet.left += 320;
+                spritesheet.left += 5;
             }
             
             break;
         case 2: //left
-            spritesheet.top = 320;
+            spritesheet.top = 5;
             if (spritesheet.left == 0)
             {
-                spritesheet.left = 320;
+                spritesheet.left = 5;
             }
             else{
-                spritesheet.left -= 320;
+                spritesheet.left -= 5;
             }
             break;
         case 3: //up
-            spritesheet.top = 640;
-            if (spritesheet.left == 320)
+            spritesheet.top = 10;
+            if (spritesheet.left == 5)
             {
                 spritesheet.left = 0;
             }
             else{
-                spritesheet.left += 320;
+                spritesheet.left += 5;
             }
             break;
         case 4: //down
-            spritesheet.top = 640;
+            spritesheet.top = 10;
             if (spritesheet.left == 0)
             {
-                spritesheet.left = 320;
+                spritesheet.left = 5;
             }
             else{
-                spritesheet.left -= 320;
+                spritesheet.left -= 5;
             }
             break;
         case 5: //standing
@@ -58,4 +58,3 @@
     spr.setTextureRect(spritesheet);
     }
 };
-

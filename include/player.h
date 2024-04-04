@@ -4,9 +4,7 @@
 #include "../include/animation.h"
 #include <fmt/core.h>
 #include <../include/physics.h>
-
- 
-//using namespace sf;
+#define numberOfItems 10
  
 class Player
 {
@@ -17,7 +15,8 @@ private:
     sf::Vector2f Position;
     sf::Sprite Sprite;
     sf::Texture Texture;
- 
+
+    Animation animate;
 
     bool LeftPressed;
     bool RightPressed;
@@ -35,7 +34,7 @@ public:
     // Send a copy of the sprite to main
     sf::Sprite getSprite();
 
-    void setScale(sf::Vector2f scale);
+    void scale(sf::Vector2f scale);
  
     void moveLeft();
  
@@ -55,6 +54,6 @@ public:
     void stopDown();
  
     // We will call this function once every frame
-    void update(float elapsedTime);
+    void update(float elapsedTime, sf::Sprite structures[numberOfItems], sf::Sprite map);
  
 };
